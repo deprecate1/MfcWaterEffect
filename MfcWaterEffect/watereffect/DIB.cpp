@@ -90,7 +90,7 @@ void CDib::Create32BitFromPicture (CPictureHolder* pPicture, int iWidth, int iHe
     {
         for(int j=0;j<iWidth;j++)
         {
-            pAr[(i*iWidth)+j] = FixColorRef(tempDC.GetPixel(j,i));
+            pAr[(i*iWidth)+j] = FixColorRef(tempDC.GetPixel(j,iHeight - i - 1));
         }
     }
 
